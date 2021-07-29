@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+}
+
+#container {
+    width: 30%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(222, 26%, 31%);
+}
+
+#topContainer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#themeChangerContainer {
+    display: flex;
+}
+
+#themeChanger {
+    display: flex;
+    flex-direction: column;
+}
+
+#answerContainer {
+    text-align: end;
+    background-color: hsl(224, 36%, 15%);
+    font-size: 32px;
+    padding: 25px;
+    color: white;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+#answerContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#calculatorButtonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+.btns {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(30, 25%, 89%);
+    padding: 15px 0px;
+    margin: 7px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0px 3px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+    cursor: pointer;
+}
+
+#resetBtn {
+    width: 47%;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+    color: white;
+}
+
+#deleteBtn {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+    color: white;
+}
+
+#equalsBtn {
+    width: 47%;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+    color: white;
+}
+
+#themeNavigator {
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 35px;
+    position: relative;
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#themeNavigatorBtn {
+    position: absolute;
+    width: 20%;
+    height: 12px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    top: 4px;
+    left: 5px;
+}
+
+#themeCount {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+#themeNumber1 {
+    color: hsl(6, 63%, 50%);
+}
+
+#themeHeading {
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 1px;
+    margin-right: 20px;
+}
+
+#calcHeading {
+    font-size: 32px;
+}
+
+.attribution {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.attribution a {
+    color: coral;
+}
+
+.btns:active {
+    transform: translateY(1px);
+}
+
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 95%;
+        margin: 80px auto;
+    }
+    .btns {
+        padding: 20px 0;
+    }
+    .attribution {
+        font-size: 13px;
+    }
+}
